@@ -22,8 +22,8 @@ import com.argadiaz.quiz2.eplapp.databinding.FragmentPlayerBinding;
 import com.argadiaz.quiz2.eplapp.models.Team;
 
 public class PlayerFragment extends Fragment {
-    FragmentPlayerBinding binding;
-    Team team;
+    private FragmentPlayerBinding binding;
+    private Team team;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +46,7 @@ public class PlayerFragment extends Fragment {
         binding.setTeam(team);
         setupRvPlayer();
     }
-
+    
     public void setupRvPlayer(){
         binding.rvPlayer.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.rvPlayer.setAdapter(new PlayerAdapter(team.getPlayerList()));

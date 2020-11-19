@@ -29,7 +29,7 @@ import java.util.List;
 
 public class TeamFragment extends Fragment {
     private FragmentTeamBinding binding;
-    TeamViewModel viewModel;
+    private TeamViewModel viewModel;
     private List<Team> teams;
     @Override
     public void onCreate(Bundle savedInstanceState) {
